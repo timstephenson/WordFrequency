@@ -12,6 +12,7 @@
 		D30D48811953FC8200D15845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30D487F1953FC8200D15845 /* Main.storyboard */; };
 		D30D48831953FC8200D15845 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30D48821953FC8200D15845 /* Images.xcassets */; };
 		D30D488F1953FC8200D15845 /* WordFrequencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D488E1953FC8200D15845 /* WordFrequencyTests.swift */; };
+		D30D48991953FD5000D15845 /* WordFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D48981953FD5000D15845 /* WordFrequency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 		D30D48881953FC8200D15845 /* WordFrequencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFrequencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30D488D1953FC8200D15845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30D488E1953FC8200D15845 /* WordFrequencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFrequencyTests.swift; sourceTree = "<group>"; };
+		D30D48981953FD5000D15845 /* WordFrequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordFrequency.swift; sourceTree = "<group>"; };
+		D3D3A30F1957B15C00CBE352 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		D30D486D1953FC8200D15845 = {
 			isa = PBXGroup;
 			children = (
+				D3D3A30F1957B15C00CBE352 /* Readme.markdown */,
 				D30D48781953FC8200D15845 /* WordFrequency */,
 				D30D488B1953FC8200D15845 /* WordFrequencyTests */,
 				D30D48771953FC8200D15845 /* Products */,
@@ -80,6 +84,7 @@
 				D30D487F1953FC8200D15845 /* Main.storyboard */,
 				D30D48821953FC8200D15845 /* Images.xcassets */,
 				D30D48791953FC8200D15845 /* Supporting Files */,
+				D30D48981953FD5000D15845 /* WordFrequency.swift */,
 			);
 			path = WordFrequency;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			files = (
 				D30D487E1953FC8200D15845 /* ViewController.swift in Sources */,
 				D30D487C1953FC8200D15845 /* AppDelegate.swift in Sources */,
+				D30D48991953FD5000D15845 /* WordFrequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +334,7 @@
 				INFOPLIST_FILE = WordFrequency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,6 +346,7 @@
 				INFOPLIST_FILE = WordFrequency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -397,6 +405,7 @@
 				D30D48941953FC8200D15845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30D48951953FC8200D15845 /* Build configuration list for PBXNativeTarget "WordFrequencyTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				D30D48971953FC8200D15845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
