@@ -51,7 +51,7 @@ class WordFrequencyTests: XCTestCase {
     func testSortedListWithLimitShouldReturnAllItemsWhenLimitIsLarger() {
         var testArray: NSMutableArray = [ [ "word": "zebra", "count": 3 ], [ "word": "test", "count": 5 ], [ "word": "swift", "count": 2 ] ]
         var sortedWords = words.sortedListWithLimit(testArray, limit: 100)
-        assert(sortedWords.count == 3, "There should 3 element in the array.")
+        assert(sortedWords.count == 3, "There should 3 elements in the array.")
     }
     
     func testSortedListWithLimitShouldReturnMostFrequentFirst() {
@@ -98,7 +98,7 @@ class WordFrequencyTests: XCTestCase {
     // To do: If this is undesirable, implement less naive approach that also handles plural and other edge cases.
     func testArrayOfWordsFromStringReturnsWordsWrappedInSingleQuotes() {
         var wordArray = words.arrayOfWordsFromString(" Did you eat your 'spinach'?   ")
-        assert(wordArray.containsObject("'spinach'"), "Words with wrapped in quotes should still exist. But should be lowercase.")
+        assert(wordArray.containsObject("'spinach'"), "Words wrapped in quotes should still exist. But should be lowercase.")
     }
     
     // Describe .fasterSorteddWordFrequency(text: NSString, limit: Int) -> NSArray

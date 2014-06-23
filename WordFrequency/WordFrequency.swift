@@ -44,7 +44,7 @@ class WordFrequency {
     */
     
     func sortedWordFrequency(text: String, limit: Int) -> NSArray {
-        var wordsSubset: NSArray
+        
         var unsortedWords = NSMutableArray(capacity: 0)
         let countedWords = countedSetFromString(text)
         
@@ -64,6 +64,7 @@ class WordFrequency {
     */
 
     func countedSetFromString(text: String) -> NSCountedSet {
+        
         var countedWords = NSCountedSet()
         let enumerationOptions: NSStringEnumerationOptions = .ByWords | .Localized
         let range = Range(start: text.startIndex, end: text.endIndex)
@@ -76,6 +77,7 @@ class WordFrequency {
             }
         })
         return countedWords
+        
     }
     
     
@@ -97,6 +99,7 @@ class WordFrequency {
         })
         
         return sortedListWithLimit(unsortedWords, limit: limit)
+        
     }
     
     /*
@@ -112,6 +115,7 @@ class WordFrequency {
         // Remove empty strings from the array
         var words: NSArray = text.lowercaseString.componentsSeparatedByCharactersInSet(separators.invertedSet)
         return words.filteredArrayUsingPredicate( NSPredicate(format: "self <> ''") )
+        
     }
     
     // Expects two argumennts 
@@ -120,6 +124,7 @@ class WordFrequency {
     // The array is sorted according to the sortDescriptor.
     // If the resulting arrya is longer than the limit, a range of the array is returned.
     func sortedListWithLimit(unsortedWords: NSMutableArray, limit: Int) -> NSArray {
+        
         var wordsSubset: NSArray
         wordsSubset = unsortedWords.sortedArrayUsingDescriptors( [ self.sortDescriptor ] )
         
@@ -128,5 +133,6 @@ class WordFrequency {
         } else {
             return wordsSubset.subarrayWithRange(NSMakeRange(0, limit))
         }
+        
     }
 }
