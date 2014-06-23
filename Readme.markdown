@@ -22,7 +22,7 @@ Please provide reasoning on how the solution obeys the O(n) constraint.
 
 There are two implementations of the sortedWordFrequency method.
 
-I am excited about Swift, so I've done both implementations twice. The fist time, using swift, and the same methods again using Objective-c.
+I am excited about Swift, so I've done both implementations twice. The first time, using swift, and the same methods again using Objective-c.
 
 WordFrequency is the Swift version of the challenge. [View Objective-c Version](https://github.com/timstephenson/OCWordFrequency)
 
@@ -31,8 +31,7 @@ Both methods take two parameters:
 1. a String representing the contents of a text document
 2. an integer providing the number of items to return
 
-Both methods return a sorted array of dictionary objecst that contains the Strings ordered by word frequency,
-the most frequently occurring word first.
+Both methods return a sorted array of dictionary objects that contains the Strings ordered by word frequency, the most frequently occurring word first.
 
 The first, sortedWordFrequency uses an enumerator to iterate over the string and add words
 to a NSCounted set.
