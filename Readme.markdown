@@ -22,7 +22,7 @@ Please provide reasoning on how the solution obeys the O(n) constraint.
 
 There are two implementations of the sortedWordFrequency method.
 
-Because I am excited about Swift, I've done the assignment twice. The fist time, using swift. I then implemented the same methods again using Objective-c.
+I am excited about Swift, so I've done both implementations twice. The fist time, using swift, and the same methods again using Objective-c.
 
 WordFrequency is the Swift version of the challenge. [View Objective-c Version](https://github.com/timstephenson/OCWordFrequency)
 
