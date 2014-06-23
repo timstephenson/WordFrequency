@@ -47,7 +47,7 @@ both methods in the class for additional exploration.
 
 You can run the application to see it display the top 20 words from the textView. There is also a suite of tests that verify functionality.
 
-I've tried to meet the linear time constraint by using data structures built specifically for this type of task, and limiting iterations over the data. I've also prepared tests to measure the time it take to complete the text as the string gets larger. Here's some data for the two methods. All of my measurement was done using Swift.
+I've tried to meet the linear time constraint by using data structures built specifically for this type of task, and limiting iterations over the data. I've also prepared tests to measure the time it takes to complete the task as the text input string gets larger. Here's some data for the two methods. All of my measurement was done using Swift.
 
 
 Method                      | Time for:  | 191,250 Chrs | 382,500 Chrs | 765,000 Chrs | 1,530,000 Chrs | 3,060,000 Chrs
