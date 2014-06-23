@@ -1,8 +1,9 @@
 # Coding Challenge
 
 Write a function that takes two parameters:
-(1) a String representing the contents of a text document
-(2) an integer providing the number of items to return
+
+1. a String representing the contents of a text document
+2. an integer providing the number of items to return
 
 Implement the function such that it returns a list of Strings ordered by word frequency, the most frequently occurring word first.
 Use your best judgment to decide how words are separated.
@@ -12,6 +13,7 @@ You may use any standard data structures.
 You may use Objective-C as your programming language.
 
 Performance Constraints:
+
 Your solution must run in O(n) time where n is the number of characters in the document.
 Please provide reasoning on how the solution obeys the O(n) constraint.
 
@@ -25,8 +27,9 @@ Because I am excited about Swift, I've done the assignment twice. The fist time,
 WordFrequency is the Swift version of the challenge. [View Objective-c Version](https://github.com/timstephenson/OCWordFrequency)
 
 Both methods take two parameters:
-(1) a String representing the contents of a text document
-(2) an integer providing the number of items to return
+
+1. a String representing the contents of a text document
+2. an integer providing the number of items to return
 
 Both methods return a sorted array of dictionary objecst that contains the Strings ordered by word frequency,
 the most frequently occurring word first.
